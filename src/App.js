@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const initialURL = "https://pokeapi.co/api/v2/pokemon/132/encounters";
   return (
     <div className="App">
       <header className="App-header">
