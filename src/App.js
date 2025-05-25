@@ -3,6 +3,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { getAllPokemon, getPokemon } from "./utils/pokemon";
 import Card from "./commponents/Card";
+import Navbar from "./commponents/Navbar/Navbar";
 
 function App() {
   const initialURL = "https://pokeapi.co/api/v2/pokemon";
@@ -35,6 +36,8 @@ function App() {
   console.log(pokemonData);
 
   return (
+    <>
+    <Navbar/>
     <div className="App">
       {loading ? (
         <h1>ロード中・・・</h1>
@@ -48,6 +51,7 @@ function App() {
         </>
       )}
     </div>
+    </>
   );
 }
 
